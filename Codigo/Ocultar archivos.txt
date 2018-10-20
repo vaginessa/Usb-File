@@ -1,0 +1,35 @@
+Attrib /s /d +s +h "Carpeta o Archivo"
+
+
+
+Entonces Pondrias F: enter 
+
+Despues Attrib -s -r -h /s /d enter 
+
+Nota: debes ponerlo tal cual con espacios 
+
+
+
+
+Lo primero que hacemos es ingresar al cmd, ubicarnos en nuestra memoria (en mi caso G, y escribir el siguiente comando 
+
+Attrib /d /s -r -h -s *.* 
+
+* Attrib: Para visualizar o modificar atributos 
+* /d: Para poder procesar carpetas 
+* /s: Para poder procesar subcarpetas 
+* -r: Quitar atributos de solo lectura 
+* -h: Quitar atributos de oculto 
+* -s: Quitar atributos de sistema 
+* *.*: Para archivos de cualquier nombre, con cualquier extensión 
+
+
+@echo off 
+Title Login - Hacker Fail 
+Color 0A 
+echo Hola bienvenidos a hacker fail porfavor 
+set /p user=Ingrese su Nombre: 
+cls 
+echo ok %user% bienvendios seas 
+Pause 
+Fin
